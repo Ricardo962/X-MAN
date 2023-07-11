@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/logo.svg" type="image/x-icon">
+    <title>X-Man</title>
+
+    <!--Nosso CSS-->
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <!--Fonte Oxasium-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Oxanium&family=Raleway:wght@900&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--logo X-MAN-->
+    <header id="cabecalho">
+        <img src=".//src/img/logo.svg" alt="">
+    </header>
+
+    <main>
+        <!--Secao de personagens-->
+        <section id="personagens">
+            <h2>selecione um personagem</h2>
+            <ol class="lista_personagens">
+                <li class="personagem selecionado" id="jean-grey" data-name="jean grey"
+                    data-description="Os poderes de Jean eram restritos a simples telecinese, e até mesmo levantar seu próprio peso rapidamente cansava ela.">
+                    <img src=".//src/img/card-jean-grey.jpg" alt="Personagem Jean-Grey">
+                </li>
+                <li class="personagem" id="ciclope" data-name="ciclope"
+                    data-description="Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.">
+                    <img src=".//src/img/card-ciclope.jpg" alt="Personagem Ciclope">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="lince negra"
+                    data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar.">
+                    <img src=".//src/img/card-lince-negra.jpg" alt="Personagem Lince-Negra">
+                </li>
+                <li class="personagem" id="tempestade" data-name="tempestade"
+                    data-description="Tem o poder de controlar as forças da natureza, faz o clima variar entre seus extremos, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos.">
+                    <img src=".//src/img/card-tempestade.jpg" alt="Personagem Tempestade">
+                </li>
+                <li class="personagem" id="wolverine" data-name="wolverine"
+                    data-description="Wolverine é um dos mutantes mais importante e reconhecido da história dos X-Men.">
+                    <img src=".//src/img/card-wolverine.jpg" alt="Personagem Wolverine">
+                </li>
+                <li class="personagem" id="noturno" data-name="noturno"
+                    data-description="Ele é um mutante que nasceu com cauda, orelhas pontudas, mãos com três dedos e pés com dois dedos.">
+                    <img src=".//src/img/card-noturno.jpg" alt="Personagem Noturno">
+                </li>
+                <li class="personagem" id="magneto" data-name="magneto"
+                    data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos.">
+                    <img src=".//src/img/card-magneto.jpg" alt="Personagem Magneto">
+                </li>
+                <li class="personagem" id="vampira" data-name="vampira"
+                    data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente.">
+                    <img src=".//src/img/card-vampira.jpg" alt="Personagem Vampira">
+                </li>
+            </ol>
+        </section>
+
+        <!--Secao de personagem selecionado-->
+        <section id="personagem-destaque">
+            <img class="personagem-grande" src=".//src/img/card-jean-grey.png" alt="Personagem Jean-Grey">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem">jean grey</h2>
+                <p class="descricao-personagem">Os poderes de Jean eram restritos a simples telecinese, e até mesmo levantar seu próprio peso rapidamente cansava ela.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

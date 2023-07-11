@@ -1,0 +1,14 @@
+@media screen and (min-width: 960px) {
+    html {
+        font-size: 75%;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #personagem-destaque {
+        justify-content: center;
+    }
+}

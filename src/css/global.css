@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --fonte-oxanium: 'Oxanium', monospace;
+    --cor-azul: #009DCF;
+    --cor-branco: #ffff;
+}
+
+html {
+    font-size: 62.7%;
+}
+
+body {
+    background: black;
+    background-size: cover;
+    font-family: var(--fonte-oxanium);
+    height: 100vh
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-desktop.jpg) no-repeat;
+    background-size: cover;
+    opacity: .2;
+    z-index: -1;
+}
+
+h2 {
+    color: var(--cor-branco);
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 18px;
+    border-bottom: 2px solid var(--cor-azul);
+    text-transform: uppercase;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+header#cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+header#cabecalho img {
+    width: 15rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 152px);
+    gap: 30px;
+    padding: 1.5rem;
+}
+
+section#personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#personagens h2 {
+    width: 100%;
+}
+
+section#personagens ol.lista_personagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 585px;
+
+}
+
+section#personagens ol.lista_personagens li {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+section#personagens ol.lista_personagens li:hover {
+    transform: scale(1.06);
+}
+
+section#personagens ol.lista_personagens li.personagem.selecionado {
+    box-shadow: 0px 0px 30px 5px var(--cor-azul);
+    outline: 2.5px solid var(--cor-azul);
+}
+
+section#personagem-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 483px;
+}
+
+section#personagem-destaque img.personagem-grande {
+    width: 429px
+}
+
+section#personagem-destaque div.informacoes-personagem {
+    width: 100%
+}
+
+section#personagem-destaque div.informacoes-personagem h2.nome-personagem {
+    font-size: 2rem;
+}
+
+section#personagem-destaque div.informacoes-personagem p.descricao-personagem {
+    max-width: 490px;
+    margin: 0 auto;
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 1.4rem;
+}
